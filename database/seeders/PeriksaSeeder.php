@@ -4,18 +4,14 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Schema;
 
 class PeriksaSeeder extends Seeder
 {
-  
+    /**
+     * Run the database seeds.
+     */
     public function run(): void
     {
-        Schema::disableForeignKeyConstraints();
-
-        DB::table('periksas')->truncate();
-    
-        Schema::enableForeignKeyConstraints();
         DB::table('periksas')->insert([
             [
                 'id_pasien' => 1, // Sesuaikan dengan ID pasien di tabel users

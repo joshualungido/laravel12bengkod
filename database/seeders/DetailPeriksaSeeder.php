@@ -14,18 +14,17 @@ class DetailPeriksaSeeder extends Seeder
     {
         DB::table('detail_periksas')->insert([
             [
-                'id_periksa' => 1, // ganti jadi 1
-                'id_obat' => 1,
+                'id_periksa' => 3, // Sesuaikan dengan ID di tabel periksas
+                'id_obat' => 1,    // Sesuaikan dengan ID di tabel obats
             ],
             [
-                'id_periksa' => 1, // ganti jadi 1
+                'id_periksa' => 3,
                 'id_obat' => 2,
             ],
             [
-                'id_periksa' => 2, // ganti jadi 2
+                'id_periksa' => 4,
                 'id_obat' => 3,
             ],
         ]);
-        
     }
 }
